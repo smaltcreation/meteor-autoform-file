@@ -1,0 +1,15 @@
+<template name="afInputSmaltFile">
+    <input type="file" class="hidden" {{atts}}>
+    <button type="button" class="af-smalt-add-images add-images {{btnClass}}">
+        <i class="glyphicon glyphicon-picture"></i>
+        {{placeholder}}
+    </button>
+    <div class="af-smalt-previews previews clearfix">
+        {{#each uploadedFiles}}
+            {{> afInputSmaltImagePreview}}
+        {{/each}}
+        {{#each files}}
+            {{> afInputSmaltImagePreview}}
+        {{/each}}
+    </div>
+</template>

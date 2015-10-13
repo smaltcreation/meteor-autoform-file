@@ -1,0 +1,47 @@
+.af-smalt-previews {
+    margin: 15px auto auto;
+    padding: 0;
+}
+
+.af-smalt-previews .af-smalt-preview {
+    float: left;
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    width: calc(25% - 15px);
+    margin: 0 15px 15px 0;
+}
+
+.af-smalt-previews .af-smalt-preview .af-smalt-helper {
+    position: absolute;
+    top: 5px;
+}
+
+.af-smalt-previews .af-smalt-preview .af-smalt-helper-left {
+    left: 5px;
+}
+
+.af-smalt-previews .af-smalt-preview .af-smalt-helper-right {
+    right: 5px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .af-smalt-preview {
+        width: calc(50% - 15px);
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .af-smalt-preview {
+        width: calc(33% - 15px);
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .af-smalt-preview {
+        width: calc(25% - 15px);
+    }
+}

@@ -1,0 +1,19 @@
+<template name="afInputSmaltImagePreview">
+    <div class="af-smalt-preview">
+        {{#if uploading}}
+            <span class="af-smalt-helper af-smalt-helper-right label label-default">
+                <span class="glyphicon glyphicon-refresh"></span>
+            </span>
+        {{else}}
+            {{#if error}}
+                <span class="af-smalt-helper af-smalt-helper-left label label-warning">
+                    <span class="glyphicon glyphicon-warning-sign"></span>
+                </span>
+            {{/if}}
+            <button type="button" class="af-smalt-helper af-smalt-helper-right btn btn-xs btn-default remove">
+                <span class="glyphicon glyphicon-remove"></span>
+            </button>
+        {{/if}}
+        <img class="af-smalt-img img-responsive" src="{{src}}">
+    </div>
+</template>
