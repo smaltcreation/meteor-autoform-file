@@ -1,7 +1,9 @@
 Package.describe({
-    name: 'smalt:autoform-file',
+    name: 'smaltcreation:autoform-file',
     version: '0.0.1',
-    summary: 'File input for autoform'
+    summary: 'File input for autoform',
+    git: 'https://github.com/SmaltCreation/meteor-autoform-file.git',
+    documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
